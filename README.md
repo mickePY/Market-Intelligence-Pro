@@ -87,12 +87,44 @@ Uses the **VADER Compound score**:
 
 ---
 
-## 📂 Installation & Setup
-1. **Clone the repo**: `git clone <repo-url>`
-2. **Setup environment**: `pip install -r requirements.txt`
-3. **Configure competitors**: Edit `config/data_sources_config.yaml`.
-4. **Launch Dashboard**: `streamlit run src/visualization/competitive_dashboard.py`
-5. **Start API**: `uvicorn api.main:app --reload`
+## 📂 Installation & Setup (FR/EN)
+
+### 1. Prerequisites / Prérequis
+- **Python 3.10+** (Recommended/Recommandé)
+- **Git**
+
+### 2. Installation
+```powershell
+# Clone the repository / Cloner le dépôt
+git clone https://github.com/mickePY/Market-Intelligence-Pro.git
+cd Market-Intelligence-Pro
+
+# Install dependencies / Installer les dépendances
+pip install -r requirements.txt
+pip install fpdf2  # Required for PDF reports
+```
+
+### 3. Execution / Lancement
+For a full production experience, run both the API and the Dashboard in separate terminals:
+*Pour une expérience complète, lancez l'API et le Dashboard dans deux terminaux séparés :*
+
+**Terminal 1: Internal Intelligence API (Backend)**
+```powershell
+uvicorn api.main:app --reload
+```
+*Access API Docs at: http://127.0.0.1:8000/docs*
+
+**Terminal 2: Interactive Strategy Dashboard (Frontend)**
+```powershell
+# Windows PowerShell
+$env:PYTHONPATH="."
+streamlit run src/visualization/competitive_dashboard.py
+```
+
+### 4. Interactive Features / Utilisation
+- **Date Filtering**: Change the "Analysis Focal Point" in the sidebar to see real-time historical data shifts (Connected to Yahoo Finance History).
+- **PDF Export**: Generate professional executive reports directly from the sidebar.
+- **Market Trends**: Real-time Google Trends ingestion with automated fallback for stability.
 
 ---
 
