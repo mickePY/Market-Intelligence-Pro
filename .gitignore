@@ -1,0 +1,29 @@
+# Byte-compilation / optimization files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Database
+*.db
+*.sqlite3
+
+# Environment
+.env
+.venv
+env/
+venv/
+ENV/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Project-specific
+artifacts/
+tmp/
+logs/
+.gemini/
+.agents/
+.agent/
+_agents/
+_agent/

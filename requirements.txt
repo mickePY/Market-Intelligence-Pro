@@ -1,0 +1,50 @@
+# --- Core ---
+pandas>=2.2.2
+numpy>=2.1.0
+pyyaml>=6.0.1
+python-dotenv>=1.0.1
+pydantic[email]>=2.6.1
+
+# --- Data Collection ---
+requests==2.31.0
+beautifulsoup4==4.12.3
+scrapy==2.11.0
+selenium==4.17.0
+webdriver-manager==4.0.1
+pytrends==3.0.0
+newsapi-python==0.2.7
+yfinance==0.2.36
+
+# --- Data Management & SQL ---
+sqlalchemy==2.0.25
+psycopg2-binary==2.9.9
+alembic==1.13.1
+
+# --- Analysis & ML ---
+scikit-learn==1.4.0
+statsmodels==0.14.1
+nltk==3.8.1
+textblob==0.17.1
+scipy==1.12.0
+
+# --- Visualization & Dashboard ---
+streamlit==1.31.0
+plotly==5.18.0
+matplotlib==3.8.2
+seaborn==0.13.1
+fpdf==1.7.2
+python-pptx==0.6.21
+
+# --- API ---
+fastapi==0.109.2
+uvicorn==0.27.1
+httpx==0.26.0
+
+# --- Orchestration ---
+apscheduler==3.10.4
+
+# --- Testing ---
+pytest==8.0.0
+pytest-cov==4.1.0
+flake8==7.0.0
+black==24.1.1

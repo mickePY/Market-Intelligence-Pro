@@ -1,0 +1,57 @@
+competitors:
+  - id: openai
+    name: "OpenAI"
+    website: "https://openai.com"
+    social_handles:
+      twitter: "@OpenAI"
+      linkedin: "openai"
+    stock_ticker: null # Private
+    funding_info: true
+
+  - id: anthropic
+    name: "Anthropic"
+    website: "https://anthropic.com"
+    social_handles:
+      twitter: "@AnthropicAI"
+      linkedin: "anthropic"
+    stock_ticker: null # Private
+    funding_info: true
+
+  - id: google_cloud
+    name: "Google Cloud (Vertex AI)"
+    website: "https://cloud.google.com"
+    social_handles:
+      twitter: "@GoogleCloud"
+      linkedin: "google-cloud"
+    stock_ticker: "GOOGL"
+    funding_info: false
+
+  - id: aws
+    name: "Amazon Web Services (Bedrock)"
+    website: "https://aws.amazon.com"
+    social_handles:
+      twitter: "@awscloud"
+      linkedin: "amazon-web-services"
+    stock_ticker: "AMZN"
+    funding_info: false
+
+  - id: microsoft_azure
+    name: "Microsoft Azure"
+    website: "https://azure.microsoft.com"
+    social_handles:
+      twitter: "@Azure"
+      linkedin: "microsoft-azure"
+    stock_ticker: "MSFT"
+    funding_info: false
+
+analysis_params:
+  sentiment_threshold: 0.2
+  price_alert_percentage: 10
+  innovation_lookback_days: 30
+  market_size_region: "Global"
+  currency: "USD"
+
+scrapers:
+  retry_count: 3
+  timeout: 30
+  user_agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) CompetitiveIntelligenceBot/1.0"
